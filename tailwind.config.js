@@ -10,19 +10,19 @@ module.exports = {
     fontSize: {
       'title-mobile': ['26px', {
         lineHeight: '38px',
-        fontWeight: '400',
+        fontWeight: '100',
       }],
       'title': ['52px', {
         lineHeight: '62px',
-        fontWeight: '400',
+        fontWeight: '100',
       }],
       'body-mobile': ['15px', {
         lineHeight: '28px',
-        fontWeight: '400',
+        fontWeight: '100',
       }],
       'body': ['18px', {
         lineHeight: '28px',
-        fontWeight: '400',
+        fontWeight: '100',
       }]
     },
     colors: {

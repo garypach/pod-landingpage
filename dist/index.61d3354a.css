@@ -442,18 +442,22 @@ img, video {
 
 .text-body-mobile {
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 28px;
 }
 
 .text-title-mobile {
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 38px;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .uppercase {
