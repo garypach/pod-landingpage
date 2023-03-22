@@ -1,0 +1,488 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: Chivo, sans-serif;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121725;
+  overflow: hidden;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-img .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #121725cc;
+  position: absolute;
+  inset: 0;
+}
+
+.background-img .caster-img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  display: block;
+}
+
+.pod-logo {
+  width: 135px;
+  height: 56px;
+  margin-bottom: 57px;
+}
+
+.text-container {
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  background-color: #0000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+
+.text-container .text-wrapper {
+  width: 100%;
+  max-width: 327px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.text-container .text-wrapper p:nth-of-type(2) {
+  margin-top: 16px;
+}
+
+.text-container .text-wrapper .headline-text {
+  text-align: center;
+  text-transform: uppercase;
+  color: #54e6af;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px;
+}
+
+.text-container .text-wrapper .headline-text span {
+  color: #fff;
+}
+
+.text-container .text-wrapper .info-text {
+  text-align: center;
+  color: #c2cbe5;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.text-container .text-wrapper .brands-input {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.text-container .text-wrapper ul {
+  width: 100%;
+  max-width: 315px;
+  justify-content: space-around;
+  margin: 33px 0;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+
+.text-container .text-wrapper ul li {
+  width: 100%;
+  height: 17px;
+}
+
+.text-container .text-wrapper ul li img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 60px;
+  height: 17px;
+}
+
+.text-container .text-wrapper .email-group p {
+  margin-top: 8px;
+  margin-left: 32px;
+}
+
+.text-container .text-wrapper .email-group .email-error {
+  color: #fb3e3e;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  display: none;
+}
+
+.text-container .text-wrapper .email-group .email-success {
+  color: #54e6af;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  display: none;
+}
+
+.text-container .text-wrapper .email-group .email-error--active, .text-container .text-wrapper .email-group .email-success--active {
+  display: block;
+}
+
+.text-container .text-wrapper .email-group .email-input {
+  color: #fff;
+  mix-blend-mode: normal;
+  width: 326px;
+  height: 46px;
+  background: #2c344b;
+  border: none;
+  border-radius: 28px;
+  padding-left: 32px;
+  font-family: Chivo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.text-container .text-wrapper .email-button-inner {
+  display: none;
+}
+
+.text-container .text-wrapper .email-button {
+  cursor: pointer;
+  width: 326px;
+  height: 46px;
+  color: #121725;
+  background: #54e6af;
+  border: none;
+  border-radius: 28px;
+  margin-top: 16px;
+  font-family: Chivo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  box-shadow: 0 25px 20px -20px #54e6af7f;
+}
+
+.pattern-img {
+  display: none;
+}
+
+@media screen and (min-width: 665px) {
+  .pattern-img {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 65%;
+  }
+
+  .background-img {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .background-img .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #121725cc;
+    position: absolute;
+    inset: 0;
+  }
+
+  .background-img .caster-img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    max-width: 491px;
+    min-height: 767px;
+    max-height: 100%;
+    display: block;
+  }
+
+  .pod-logo {
+    width: 135px;
+    height: 56px;
+    margin-bottom: 57px;
+    position: absolute;
+    top: -200px;
+  }
+
+  .text-container {
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    max-width: 635px;
+    max-height: 509px;
+    background-color: #121725;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 258px;
+    left: 39px;
+  }
+
+  .text-container .text-wrapper {
+    width: 100%;
+    max-width: 635px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .text-container .text-wrapper p:nth-of-type(2) {
+    margin-top: 31px;
+  }
+
+  .text-container .text-wrapper .headline-text {
+    text-align: left;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .text-container .text-wrapper .info-text {
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .text-container .text-wrapper .brands-input {
+    flex-direction: column-reverse;
+  }
+
+  .text-container .text-wrapper ul {
+    width: 100%;
+    max-width: 536px;
+    justify-content: space-between;
+    margin: 40px 0 0;
+  }
+
+  .text-container .text-wrapper ul li {
+    width: 100%;
+    height: 29px;
+  }
+
+  .text-container .text-wrapper ul li img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 79px;
+    height: 29px;
+  }
+
+  .text-container .text-wrapper .email-group {
+    margin-top: 40px;
+    position: relative;
+  }
+
+  .text-container .text-wrapper .email-group .email-error, .text-container .text-wrapper .email-group .email-success {
+    position: absolute;
+  }
+
+  .text-container .text-wrapper .email-group .email-input {
+    width: 427px;
+    height: 56px;
+    padding-left: 32px;
+  }
+
+  .text-container .text-wrapper .email-button {
+    width: 162px;
+    position: absolute;
+    top: -11px;
+    right: 6px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .pattern-img {
+    display: block;
+    position: absolute;
+    bottom: 98px;
+    right: 0;
+  }
+
+  .background-img {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    padding: 130px 0 130px 165px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .background-img .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #121725cc;
+    display: none;
+    position: absolute;
+    inset: 0;
+  }
+
+  .background-img .caster-img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    max-width: 888px;
+    min-height: 640px;
+    max-height: 100%;
+    display: block;
+  }
+
+  .pod-logo {
+    width: 135px;
+    height: 56px;
+    margin-bottom: 57px;
+    position: absolute;
+    top: -140px;
+  }
+
+  .text-container {
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    max-width: 729px;
+    max-height: 509px;
+    background-color: #121725;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 261px;
+    left: 39px;
+  }
+
+  .text-container .text-wrapper {
+    width: 100%;
+    max-width: 635px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .text-container .text-wrapper p:nth-of-type(2) {
+    margin-top: 31px;
+  }
+
+  .text-container .text-wrapper .headline-text {
+    text-align: left;
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  .text-container .text-wrapper .info-text {
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .text-container .text-wrapper .brands-input {
+    flex-direction: column-reverse;
+  }
+
+  .text-container .text-wrapper ul {
+    width: 100%;
+    max-width: 636px;
+    justify-content: space-between;
+    margin: 40px 0 0;
+  }
+
+  .text-container .text-wrapper ul li {
+    width: 100%;
+    height: 29px;
+  }
+
+  .text-container .text-wrapper ul li:nth-child(3) {
+    margin-right: 10px;
+  }
+
+  .text-container .text-wrapper ul li img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    min-width: 110px;
+    height: 29px;
+  }
+
+  .text-container .text-wrapper .email-group {
+    margin-top: 40px;
+    position: relative;
+  }
+
+  .text-container .text-wrapper .email-group .email-error, .text-container .text-wrapper .email-group .email-success {
+    position: absolute;
+  }
+
+  .text-container .text-wrapper .email-group .email-input {
+    width: 427px;
+    height: 56px;
+    padding-left: 32px;
+  }
+
+  .text-container .text-wrapper .email-button {
+    width: 162px;
+    position: absolute;
+    top: -11px;
+    right: 6px;
+  }
+}
+
+/*# sourceMappingURL=index.4d663569.css.map */

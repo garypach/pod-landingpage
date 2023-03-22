@@ -6,49 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pod</title>
-    <link rel="stylesheet" href="./styles.scss" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap" rel="stylesheet">
     <script type="module" src="./app.js"></script>
 </head>
 
-<body>
-        
-        <div class="background-img">
-            <div class="overlay"></div>
-            <img class ="caster-img"src="../public/assets/desktop/image-host.jpg" alt="caster">
-            <div class="text-container">
-                <div class="text-wrapper">
-                    <img class="pod-logo" src="../public/assets/desktop/logo.svg" alt="logo"/>
-                    <p class="headline-text">Publish your podcasts <span>everywhere.</span></p>
-                    <p class="info-text">Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, 
-                        Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
-                        <div class="brands-input">
-                            <ul>
-                                <li> <img src="../public/assets/desktop/spotify.svg" alt="caster"> </li>
-                                <li> <img src="../public/assets/desktop/apple-podcast.svg" alt="caster"> </li>
-                                <li> <img src="../public/assets/desktop/google-podcasts.svg" alt="caster"> </li>
-                                <li> <img src="../public/assets/desktop/pocket-casts.svg" alt="caster"> </li>
+<body class="bg-navy">
+    <div class="min-w-[320px] font-chivo bg-navy w-full h-screen">
+            <div class="w-full h-full relative bg-navy ">
+                <div class="hidden md:block w-fit md:absolute md:left-[39px] md:top-[50px] min-[1440px]:top-[102px] min-[1440px]:left-[165px] z-10">
+                    <img class="w-fit" src="../public/assets/desktop/logo.svg" width="100%" height="auto" alt="logo" />
+                </div>
+                <div class="hidden w-fit z-10 md:block md:absolute md:left-[30px] md:bottom-0 min-[1440px]:left-auto min-[1440px]:right-0">
+                    <img class="w-fit" src="../public/assets/desktop/bg-pattern-dots.svg" width="100%" height="auto" alt="logo" />
+                </div>
+                <div class="h-full w-full md:absolute right-0 md:w-fit min-[1440px]:top-[130px] min-[1440px]:bottom-[130px] z-0">
+                    <picture>
+                        <source media="(min-width:1440px)" srcset="../public/assets/desktop/image-host.jpg">
+                        <source media="(min-width:768px)" srcset="../public/assets/tablet/image-host.jpg">
+                        <img class="object-cover h-full w-full md:object-contain md:h-[767px]" src="../public/assets/mobile/image-host.jpg" width="100%" height="auto" alt="caster"/>
+                      </picture> 
+                </div>
+                <div class="bg-navy opacity-75 w-full h-full absolute top-0 left-0 z-0 md:opacity-50"></div>
+                <div class="w-full max-w-[327px] h-fit flex-col items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 md:bg-navy md:max-w-[635px] md:left-[39px] md:translate-x-0 md:pt-[93px] min-[1440px]:left-[234px]">
+                    <div class="w-full flex justify-center md:hidden">
+                        <img class="w-[134px]" src="../public/assets/desktop/logo.svg" width="100%" height="auto" alt="logo" />
+                    </div>
+                    <div class="w-full flex flex-col items-center justify-center mt-14 md:items-start md:mt-0">
+                        <p class="text-title-mobile text-center text-green uppercase md:text-left md:text-[48px] md:leading-[56px]">Publish your podcasts <span class="text-[#ffffff]">everywhere.</span></p>
+                        <p class="text-body-mobile text-light-purple text-center mt-4 md:text-left md:text-[18px] md:leading-[28px] md:max-w-[445px]">Upload your audio to Pod with a single click. We'll then distribute your
+                            podcast to Spotify,
+                            Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+                        <div class="flex flex-col w-full md:flex-col-reverse">
+                            <ul class="w-full flex items-center mt-12 h-[17px] justify-evenly md:h-[29px] md:max-w-[536px] md:justify-between md:mt-16">
+                                <li class="w-[56px] md:w-[76px] "> <img src="../public/assets/desktop/spotify.svg" width="100%" height="auto" alt="caster"> </li>
+                                <li class="w-[45px] md:w-[76px]"> <img src="../public/assets/desktop/apple-podcast.svg" width="100%" height="auto" alt="caster"> </li>
+                                <li class="w-[73px] md:w-[96px] pt-1"> <img src="../public/assets/desktop/google-podcasts.svg" width="100%" height="auto" alt="caster"> </li>
+                                <li class="w-[77px] md:w-[96px]"> <img src="../public/assets/desktop/pocket-casts.svg" width="100%" height="auto" alt="caster"> </li>
                             </ul>
-                            <div class="email-group">
-                             <input type="text" class="email-input" placeholder="Email address">
-                             <p class="email-error">Oops! Please check your email</p>
-                             <p class="email-success">Access Requested</p>
-                             <button class="email-button">Request Access</button>
+                            <div class="w-full mt-12 relative md:max-w-[427px] ">
+                                <input type="text" class=" email-input w-full text-light-purple bg-dark-grey rounded-[28px] py-2 pl-[32px] text-[14px] leading-[28px] font-bold md:py-4 " placeholder="Email address">
+                                <p class="email-error hidden text-red ml-[32px] text-[12px] absolute">Oops! Please check your email</p>
+                                <p class="email-success hidden text-green ml-[32px] text-[12px] absolute">Access Requested</p>
+                                <button class=" email-button w-full text-navy bg-green hover:bg-light-green rounded-3xl py-2 text-[14px] leading-[28px] font-bold mt-4 md:max-w-[162px] md:absolute top-[-8px] right-1">Request Access</button>
                             </div>
-                            
                         </div>
-                    
+                    </div>
                 </div>
             </div>
-        </div>
-        <img class ="pattern-img" src="../public/assets/desktop/bg-pattern-dots.svg" alt="pattern">
-
-   
-   
-    <script src="app.js"></script>
+    </div>
 </body>
 
 </html>
